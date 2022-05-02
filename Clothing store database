@@ -1,0 +1,22 @@
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, color TEXT, price INTEGER, units_sold INTEGER);
+
+INSERT INTO clothes VALUES (1, "Hoodies", 5, "red", 25, 4);
+INSERT INTO clothes VALUES  (2, "Joggers", 7, "blue", 20, 3);
+INSERT INTO clothes VALUES (3, "Sports Bras", 10, "black", 15, 7);
+INSERT INTO clothes VALUES (4, "Belts", 3, "brown", 10, 3);
+INSERT INTO clothes VALUES (5, "Socks", 10, "black", 8, 5);
+INSERT INTO clothes VALUES (6, "T-shirts", 12, "white", 18, 10);
+INSERT INTO clothes VALUES (7, "Denim shorts", 14, "denim", 27, 12);
+INSERT INTO clothes VALUES (8, "Cropped tops", 9, "orange", 12, 9);
+INSERT INTO clothes VALUES (9, "V-neck t-shirts", 5, "green", 8, 4);
+INSERT INTO clothes VALUES (10, "Sweatshirts", 13, "navy blue", 20, 9);
+INSERT INTO clothes VALUES (11, "Camisoles", 3, "white", 5, 2);
+INSERT INTO clothes VALUES (12, "Skirts", 5, "khaki", 16, 4);
+INSERT INTO clothes VALUES (13, "Swimsuits", 14, "black", 25, 10);
+INSERT INTO clothes VALUES (14, "Swim trunks", 17, "gray", 15, 10);
+INSERT INTO clothes VALUES (15, "Swim caps", 5, "gold", 20, 3);
+SELECT  SUM(price) FROM clothes;
+SELECT * FROM clothes ORDER BY price;   
+SELECT * FROM clothes ORDER BY units_sold desc;    
+SELECT * FROM clothes WHERE quantity >=5;   
+
